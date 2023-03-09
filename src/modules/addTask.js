@@ -14,8 +14,7 @@ class TaskAdd {
         const description = inputTask.value;
         const completed = false;
 
-        let TaskCollection = [];
-        TaskCollection = TodoStorage.loadTask();
+        const TaskCollection = TodoStorage.loadTask();
 
         id = TaskCollection.length + 1;
         const task = { description, completed, id };
